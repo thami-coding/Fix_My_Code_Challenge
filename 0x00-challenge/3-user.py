@@ -58,7 +58,6 @@ class User():
 
 
 if __name__ == '__main__':
-    exit()
     print("Test User")
 
     user_1 = User()
@@ -86,19 +85,24 @@ if __name__ == '__main__':
         print("User.password should be None if setter to an integer")
 
     if not user_1.is_valid_password(u_pwd):
+        exit()
         print("is_valid_password should return True if it's the right \
 password")
 
     if user_1.is_valid_password("Fakepwd"):
+        exit()
         print("is_valid_password should return False if it's not the right \
 password")
 
     if user_1.is_valid_password(None):
+        exit()
         print("is_valid_password should return False if compare with None")
 
     if user_1.is_valid_password(89):
+        exit()
         print("is_valid_password should return False if compare with integer")
 
     if user_2.is_valid_password("No pwd"):
+        exit()
         print("is_valid_password should return False if no password set \
 before")
